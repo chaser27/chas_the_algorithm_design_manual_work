@@ -3,13 +3,6 @@
 
 #include <iostream>
 
-/*
-    Simple example of Insertion Sort
-    Speed: O(n^2)
-    Memory: O(n)
-    The basic idea is to insert one value at a time into an array/sorted linked list/etc.
-    so that the list remains in order with each insertion
-*/
 
 template <typename T>
 void print_array(T *arr, int n, int j) {
@@ -27,6 +20,13 @@ void print_array(T *arr, int n, int j) {
 
 template <typename T>
 void insertion_sort(T *arr, int n) {
+    /*
+     * Simple example of Insertion Sort
+     * Speed: O(n^2)
+     * Memory: O(n)
+     * The basic idea is to insert one value at a time into an array/sorted linked list/etc.
+     * so that the list remains in order with each insertion
+     */
     std::cout << "Starting sort of array in place\n";
     // Loop through each element of the list
     for (int i = 0; i < n; ++i) {
